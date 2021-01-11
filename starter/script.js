@@ -368,7 +368,7 @@ let sorted = false;
 
 btnSort.addEventListener('click', function (e) {
   e.preventDefault();
-  displayMovements(currentAccount.movements, !sorted); // Always do whatever the opposite of the current state is when the button is clicked
+  displayMovements(currentAccount, !sorted); // Always do whatever the opposite of the current state is when the button is clicked
   sorted = !sorted; //Make sure to toggle the variable as well, saving the state of the 'sorted' boolean
 });
 
